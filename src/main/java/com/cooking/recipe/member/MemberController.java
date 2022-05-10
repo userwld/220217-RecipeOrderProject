@@ -127,7 +127,6 @@ public class MemberController {
 	@ResponseBody
 	public Map<String,String> loginProc(@RequestBody Map<String,String> map){
 		String id = map.get("id"); String pw = map.get("pw");
-		System.out.println("hi");
 		map.put("msg", service.loginProc(id,pw));		
 		return map;
 	}
